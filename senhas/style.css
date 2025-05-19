@@ -2,10 +2,10 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
+    --cor-de-fundo: #042001;
+    --fundo-senha: #2c4d00;
+    --fundo-texto: #0e1f01;
+    --borda: #00ff15;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -19,7 +19,27 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: var(--roboto);
 }
+.inicio-fundo {
+    /* aula 3 */
+    background-image: url('to.jpg'); /* Substitua pelo caminho da sua imagem de alta resolução */
+    background-size: cover; /* A imagem vai cobrir o fundo, mantendo as proporções */
+    background-position: center; /* Centraliza a imagem para evitar que corte partes importantes */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    border-radius: 80px;
+    width: 30%;
+    height: 200px; /* Defina a altura que você deseja */
+    padding: 40px;
+    margin: 0 auto;
+}
 
+/* posicionamento para a imagem à direita */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
 .titulo-principal {
     font-family: var(--roboto-mono);
     font-size: 32px;
@@ -131,20 +151,23 @@ label {
 }
 
 .fraca {
-    width: 25%;
-    background-color: #E71B32;
+    width: 20%;
+    background-color: #e01be7;
 }
 
 .media {
-    background-color: #FAF408;
-    width: 50%;
+    background-color: #fa5508;
+    width: 40%;
 }
 
 .forte {
-    background-color: #00FF85;
+    background-color: #ff0000;
+    width: 60%;
+}
+.insana {
+    background-color: #9f00b4;
     width: 100%;
 }
-
 .parametro-senha-textos {
     display: flex;
     justify-content: space-between;
